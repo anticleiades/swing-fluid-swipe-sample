@@ -4,14 +4,14 @@ plugins {
 }
 
 group = "eu.giulianogorgone"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("eu.giulianogorgone:fluidswipe-core:1.0.0")
+    implementation("eu.giulianogorgone:fluidswipe-core:1.1.0")
 }
 
 application {

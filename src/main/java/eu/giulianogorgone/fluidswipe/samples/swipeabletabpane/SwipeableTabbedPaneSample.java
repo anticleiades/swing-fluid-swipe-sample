@@ -68,7 +68,8 @@ public final class SwipeableTabbedPaneSample {
         frame.getContentPane().add(enableGestures, BorderLayout.PAGE_END);
         frame.setPreferredSize(FRAME_DIMENSION);
         for (int i = 0; i < N_TABS; i++) {
-            JTextPane view = new JTextPane();
+            JTextArea view = new JTextArea();
+            view.setLineWrap(false);
             view.getCaret().setBlinkRate(0);
             view.setText(SAMPLE_STRINGS[i]);
             tabbedPane.add("Tab" + i, new FluidSwipeAwareJScrollPane(view));
