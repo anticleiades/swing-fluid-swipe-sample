@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation("eu.giulianogorgone:fluidswipe-core:1.1.0")
+    implementation("eu.giulianogorgone:fluidswipe-core:1.1.1")
 }
 
 application {
