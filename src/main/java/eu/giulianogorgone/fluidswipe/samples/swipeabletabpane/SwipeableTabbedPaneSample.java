@@ -16,7 +16,6 @@
 package eu.giulianogorgone.fluidswipe.samples.swipeabletabpane;
 
 import eu.giulianogorgone.fluidswipe.FluidSwipe;
-import eu.giulianogorgone.fluidswipe.components.impl.FluidSwipeAwareJScrollPane;
 
 import javax.swing.*;
 import java.awt.*;
@@ -72,7 +71,7 @@ public final class SwipeableTabbedPaneSample {
             view.setLineWrap(false);
             view.getCaret().setBlinkRate(0);
             view.setText(SAMPLE_STRINGS[i]);
-            tabbedPane.add("Tab" + i, new FluidSwipeAwareJScrollPane(view));
+            tabbedPane.add("Tab" + i, new JScrollPane(view));
         }
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
